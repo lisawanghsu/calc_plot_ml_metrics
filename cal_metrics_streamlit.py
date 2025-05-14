@@ -9,6 +9,8 @@ import mylib as ml
 def main():
     st.title('Calculate Metrics')
     st.write('This app calculates the metrics for a given dataset')
+    #显示图片
+    st.image('image.png', caption='upload file format', width=700)
     #upload a csv file
     st.write('Upload a CSV file,there are at least two columns in the file. Row 1 are column names. The first column is the actual labels and the other columns are the predicted values')
     uploaded_file = st.file_uploader("Choose a file", type="csv")
